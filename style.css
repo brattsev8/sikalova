@@ -4,8 +4,8 @@
 
 body {
     margin: 0;
-    background: URL(img/wallpapers/City-night-city-road-vehicles_1600x900.jpg) repeat fixed;
-    font: 1em 'PT Sans', Tahoma, Arial;  
+    background: #ccc;
+    font: 1em Verdana, Tahoma, Arial;  
 }
 
 ul {
@@ -26,58 +26,79 @@ a {
     margin-right: auto;
 }
 
-/*-------------------------------------------------Header*/
+                                                            /*Header*/
 
-#firstHeader {
+#topHeader {
+    padding: 0;
+    margin: 0;
+    background: #000;
+    opacity: .3;
     width: 100%;
-    height: 40px;
-    background-color: #333;
-    margin: 0px;
-    align-content: center;
+    height: 30px;
 }
 
-#textFirstHeader {
+#topHeader p {
+    padding: 0;
+    margin: 0;
     color: aliceblue;
-    font-size: .7em;
+    display: block;
+    float: left;
+    align-content: center;
+    font-size: .8em;
+    margin: 5px 5px 5px 25px;
+    
 }
 
-#secondHeader {
+#topHeader li {
+    display: block;
+    float: right;
+    padding: 3px;
+    margin: 2px;
+}
+
+#topHeader img {
+    height: inherit;
+    width: inherit;
+    border-radius: 50px;
+    opacity: 0.5;
+}
+
+#topHeader img:hover {
+    opacity: 1;
+}
+
+
+#navigator {
     width: 100%;
     height: 100px;
-    background: #000;;
+    background: #ddd;
     border-radius: 0px 0px 5px 5px;
 }
 
-#thirdHeader {
+#sliderHeader {
     width: 100%;
-    height: 200px;
-    background: URL(img/wallpapers/671915132_orig.jpg) no-repeat;
+    height: 300px;
     margin-top: 25px;
     margin-bottom: 25px;
     border-radius: 5px;
 }
 
-#logo {
-    height: 100px;
-    width: 250px;
-    background: URL(img/images/Crown-Logo.jpg) no-repeat center;
-    float: left;
-}
-
-/*-------------------------------------------------Header*/
-
-/*-------------------------------------------------Navigator*/
+                                                                /*Navigator*/
 
 .nav {
     display: block;
-    float: left;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
 }
-
 
 .topmenu {
     backface-visibility: hidden;
     position: relative;
-    background: rgba(0,0,0,.8);
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .topmenu:before, .topmenu:after {
     content: "";
@@ -98,7 +119,7 @@ a {
     line-height: 70px;
     padding: 0 30px;
     font-weight: bold;
-    color: darkgrey;
+    color: #222;
     text-transform: uppercase;
     transition: color 0.2s ease-in-out;
 }
@@ -121,7 +142,6 @@ a {
     opacity: 0;
     z-index: 10;
     width: 150px;
-    transform: perspective(600px) rotateX(-90deg);
     transform-origin: 0% 0%;
     transition: 0.6s ease-in-out;
 }
@@ -134,7 +154,6 @@ a {
 .topmenu li:hover > .submenu{
     visibility: visible;
     opacity: 1;
-    transform: perspective(600px) rotateX(20deg);
 }
 
 .submenu li a {
@@ -149,29 +168,34 @@ a {
 .submenu li a:hover {
     color: aliceblue;
 }
-
-/*-------------------------------------------------Navigator*/
-/*-------------------------------------------------Content*/
+                                                            /*Content*/
 
 #content {
     border-radius: 5px;
     background-color: beige;
+    font: Sans-Serif;
 }
 
-.container {
-    text-align: justify;
+.item {
     padding: 5px;
     margin: 10px 10px 5px 5px;
     box-shadow: 3px 3px 3px rgba(0,0,0,.4);
 }
 
-.container img {
+.item p {
+    text-indent: 25px;
+    text-align: justify;
+}
+
+.item h3 {
+    color: #228;
+}
+
+.item img {
     max-height: 250px;
     max-width: 350px;
 }
-
-/*-------------------------------------------------Content*/
-/*-------------------------------------------------Footer*/
+                                                            /*Footer*/
 
 #footer {
     width: 100%;
@@ -208,4 +232,3 @@ p#rights {
     color: dimgray;
     font-size: .8em;
 }
-/*-------------------------------------------------Footer*/
