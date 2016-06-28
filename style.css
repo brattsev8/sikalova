@@ -1,11 +1,8 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
-    background: #ccc;
-    font: 1em Verdana, Tahoma, Arial;  
+    background: white;
+    font: 1em Verdana, Tahoma, Arial;
+    font-size: 15px;
 }
 
 ul {
@@ -17,10 +14,11 @@ ul {
 a {
     text-decoration: none;
     outline: none;
+    color: black;
 }
 
 #main {
-    width: 900px;
+    width: 1000px;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -31,48 +29,8 @@ a {
 #topHeader {
     padding: 0;
     margin: 0;
-    background: #000;
-    opacity: .3;
-    width: 100%;
-    height: 30px;
-}
-
-#topHeader p {
-    padding: 0;
-    margin: 0;
-    color: aliceblue;
-    display: block;
-    float: left;
-    align-content: center;
-    font-size: .8em;
-    margin: 5px 5px 5px 25px;
-    
-}
-
-#topHeader li {
-    display: block;
-    float: right;
-    padding: 3px;
-    margin: 2px;
-}
-
-#topHeader img {
-    height: inherit;
-    width: inherit;
-    border-radius: 50px;
-    opacity: 0.5;
-}
-
-#topHeader img:hover {
-    opacity: 1;
-}
-
-
-#navigator {
     width: 100%;
     height: 100px;
-    background: #ddd;
-    border-radius: 0px 0px 5px 5px;
 }
 
 #sliderHeader {
@@ -80,10 +38,16 @@ a {
     height: 300px;
     margin-top: 25px;
     margin-bottom: 25px;
-    border-radius: 5px;
 }
 
                                                                 /*Navigator*/
+
+#navigator {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid gray;
+    align-content: center;
+}
 
 .nav {
     display: block;
@@ -94,16 +58,10 @@ a {
 }
 
 .topmenu {
-    backface-visibility: hidden;
     position: relative;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
-}
-.topmenu:before, .topmenu:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .topmenu li {
@@ -117,115 +75,47 @@ a {
     display: block;
     height: 70px;
     line-height: 70px;
-    padding: 0 30px;
-    font-weight: bold;
-    color: #222;
+    padding: 0 50px;
+    font-weight: 100;
+    color: dimgray;
     text-transform: uppercase;
-    transition: color 0.2s ease-in-out;
-}
-
-.down:after {
-    margin-left: 8px;
+    transition: color .4s ease-in-out;
 }
 
 .link:hover {
     border-bottom: 2px solid cyan;
-    color: aliceblue;
-}
-
-.submenu {
-    background: black;
-    opacity: .1;
-    position: absolute;
-    left: 0;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 10;
-    width: 150px;
-    transform-origin: 0% 0%;
-    transition: 0.6s ease-in-out;
-}
-
-.submenu > li {
-    display: block;
-    margin: 1px;
-}
-
-.topmenu li:hover > .submenu{
-    visibility: visible;
-    opacity: 1;
-}
-
-.submenu li a {
-    display: block;
-    color: white;
-    font-size: 14px;
-    line-height: 36px;
-    padding: 0 20px;
-    font-family: 'PT Sans', serif;
-}
-
-.submenu li a:hover {
-    color: aliceblue;
-}
-                                                            /*Content*/
+    color: black;
+    font-weight: 500;
+}                                                            /*Content*/
 
 #content {
-    border-radius: 5px;
-    background-color: beige;
-    font: Sans-Serif;
+    
 }
 
-.item {
-    padding: 5px;
-    margin: 10px 10px 5px 5px;
-    box-shadow: 3px 3px 3px rgba(0,0,0,.4);
+#contentText {
+    width: 650px;
+    float: left;
 }
 
-.item p {
-    text-indent: 25px;
-    text-align: justify;
+#contentSide {
+    width: 350px;
+    float: left;
 }
 
-.item h3 {
-    color: #228;
+.sidebar {
+    height: 300px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.item img {
-    max-height: 250px;
-    max-width: 350px;
-}
                                                             /*Footer*/
 
 #footer {
+    border-top: 1px solid gray;
     width: 100%;
-    height: 200px;
+    height: 50px;
     clear: both;
-    background: black;
-    border-radius: 5px;
-    margin-top: 25px;
-}
-
-#footer p {
-    color: beige;
-}
-
-#footer h3 {
-    color: cornflowerblue;
-    padding: 0px;
-}
-
-.blockFooter {
-    float: left;
-    height: 149px;
-    width: 50%;
-    padding: 10px;
-}
-
-.cont {
-    padding: 5px;
-    text-align: justify;
-    margin: 5px;
 }
 
 p#rights {

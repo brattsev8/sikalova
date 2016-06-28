@@ -101,14 +101,14 @@
 #active label {
     width: 15px;
     height:10px;
-    background: white;
+    background-color: darkgray;
     display: inline-block;
     cursor: pointer;
     border-radius: 2px;
 }
 
 #active label:hover {
-    background: #999;
+    background-color: aqua;
 }
 
 #slide1:checked ~ #active label:nth-child(1),
