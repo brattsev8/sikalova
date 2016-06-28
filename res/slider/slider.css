@@ -108,7 +108,7 @@
 }
 
 #active label:hover {
-    background-color: aqua;
+    background-color: darkslategray;
 }
 
 #slide1:checked ~ #active label:nth-child(1),

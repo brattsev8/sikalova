@@ -1,8 +1,8 @@
 body {
     margin: 0;
     background: white;
-    font: 1em Verdana, Tahoma, Arial;
-    font-size: 15px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
 }
 
 ul {
@@ -46,12 +46,10 @@ a {
     width: 100%;
     height: 70px;
     border-bottom: 1px solid gray;
-    align-content: center;
 }
 
 .nav {
     display: block;
-    align-content: center;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
@@ -71,13 +69,13 @@ a {
 }
 
 .link {
-    font-family: sans-serif;
     display: block;
     height: 70px;
     line-height: 70px;
     padding: 0 50px;
     font-weight: 100;
     color: dimgray;
+    font-weight: 200;
     text-transform: uppercase;
     transition: color .4s ease-in-out;
 }
@@ -95,6 +93,7 @@ a {
 #contentText {
     width: 650px;
     float: left;
+    text-align: justify;
 }
 
 #contentSide {
@@ -103,13 +102,32 @@ a {
 }
 
 .sidebar {
-    height: 300px;
+    min-height: 300px;
     width: 250px;
     margin-left: auto;
     margin-right: auto;
+    padding: 5px;
 }
 
-                                                            /*Footer*/
+.sidebar h5 {
+    padding: 0px;
+    margin: 0px;
+    color: dimgrey;
+}
+
+.sidebar a {
+    padding: 0px;
+    margin: 0px;
+    color: dimgrey;
+}
+
+
+.sidebar p {
+    padding: 0px;
+    margin: 0px;
+    color: dimgrey;
+}
+                                                          /*Footer*/
 
 #footer {
     border-top: 1px solid gray;
